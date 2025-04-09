@@ -1,0 +1,365 @@
+/* General Styles */
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /* only if theres an img...... (img settings) */
+
+    background-image: url('https://planter.garden/images/background/header_2.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+
+}
+
+
+html, body {
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333333; /* header color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    width: cover;
+    border-radius: 0 0 20px 20px;
+    padding: 2% 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .logo {
+    font-size: 120%;
+    font-weight: bold;
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white; /*color of the texts on top */
+    text-decoration: none;
+    font-size: 120%;
+    transition: color 0.3s, background-color 1.0s; /* Smooth transition */
+    position: relative;
+    z-index: 10;
+}
+
+header nav ul li a:hover {
+    color: #215b2a; /* Text color on hover */
+    background-color: none; /* Background color on hover */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.custom-button {
+    background-image: url('heart.png'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the button */
+    background-position: center 22%; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 50px; /* Adjust the size of the button to match the image */
+    height: 50px;
+    position: relative;
+    z-index: 10;
+    /* Make it clearly clickable: */
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    opacity: 0.8; /* Slightly dim the button on hover */
+}
+
+.image-overlay {
+    position: absolute; /* Places the content relative to the body */
+    top: 30vh; /* Adjust this based on your background positioning */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the content */
+    text-align: center;
+    color: black; /* Makes text visible over the image */
+    background: transparent; /* Optional: adds a semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    width: 95%; /* Adjust based on preference */
+    height: 50%; /* Adjust based on preference */
+}
+
+.image-overlay h1 {
+    font-size: 65px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 50%;
+}
+
+.myinfo {
+    background-color: #333333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    width: 60%;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 auto; /* Centers container horizontally */
+    display: block; /* Change from flex (unless needed) */
+    text-align: left; /* Aligns text to left */
+    color: white;
+}
+
+.myinfo p {
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+
+.GTNM {
+    font-size: 20px;
+    font-family: Arial, italic;
+    text-align: left;
+    background: url('leaves.png'); /* Key change */
+    background-repeat: repeat-y;
+    background-size: 100% auto; /* Adjust width to 100% and maintain aspect ratio */
+    min-height: 100vh; /* Ensure the background covers at least the viewport height */
+    color: black;
+    width: cover; /* Full width */
+}
+
+.green-text-highlight {
+    color: green; /* Change this to any color you want */
+    font-weight: bold; /* Optional: Make the word bold */
+    background-color: #fffb2b; /* Change to any color */
+    border-radius: 10px; /* Round corners */
+    padding: 5px 10px; /* Space around text */
+    display: inline-block; /* Makes background fit the text properly */
+}
+
+.green-textGTNM {
+    color: green; /* Change this to any color you want */
+    font-weight: bold; /* Optional: Make the word bold */
+    background-color: #fffb2b; /* Change to any color */
+    border-radius: 10px; /* Round corners */
+    padding: 2px 10px; /* Space around text */
+    display: inline-block; /* Makes background fit the text properly */
+}
+
+.search-container h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.green-text {
+    color: green; /* Change this to any color you want */
+    font-weight: bold; /* Optional: Make the word bold */
+}
+
+/* search bar */
+.search-container input {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #00c017;
+    border-radius: 20px;
+    position: relative;
+    z-index: 10;
+}
+
+.search-container input:focus {
+    outline: none; /* Remove default */
+    border: 2px solid #00c017 !important; /* Match the green border */
+    box-shadow: 0 0 5px rgba(0, 192, 23, 0.5); /* Optional glow effect */
+}
+
+.search-container button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: transparent;
+}
+
+.search-container p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Social Footer Styles */
+.social-footer {
+    background-color: #333333;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icons a {
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    color: #4CAF50;
+}
+
+.social-icons svg {
+    fill: currentColor;
+    width: 30px;
+    height: 30px;
+}
+
+/* Add margin to main content to prevent footer overlap */
+main {
+    margin-bottom: 80px; /* Adjust this value based on your footer height */
+}
+
+/* media query */
+@media screen and (max-width: 1300px){
+    body{
+        background-size: 1350px;
+        background-position: top;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    body{
+        background-size: 1250px;
+        background-position: top;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    body{
+        background-size: 1200px;
+        background-position: top;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    body{
+        background-size: 1150px;
+        background-position: top;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    body{
+        background-size: 110%;
+        background-position: top;
+    }
+    .image-overlay h1 {
+        font-size: 50px; /* Scales based on screen width */
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    body{
+        background-size: 110%;
+        background-position: top;
+    }
+}
+
+@media screen and (max-width: 850px){
+    body{
+        background-size: 110%;
+        background-position: top;
+    }
+}
+
+@media screen and (max-width: 835px){
+    body{
+        background-size: 110%;
+        background-position: top;
+    }
+}
+
+@media screen and (max-width: 820px){
+    body{
+        background-size: 110%;
+        background-position: top;
+    }
+}
+
+@media screen and (max-width: 800px){
+    body{
+        background-size: 110%;
+        background-position: top;
+    }
+}
+
+@media screen and (max-width: 795px){
+    body{
+        background-size: 110%;
+        background-position: top;
+    }
+}
+
+@media screen and (max-width: 789px){
+    body{
+        background-size: 110%;
+        background-position: top;
+    }
+}
+
+@media screen and (max-width: 750px){
+    body{
+        background-size: 145%;
+        background-position: top;
+    }
+    .search-container h1 {
+        font-size: 50px;
+        margin-bottom: 50%;
+    }
+
+    .image-overlay h1 {
+        font-size: 50px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        margin-top: 140%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background-size: 180%;
+        background-position: top;
+    }
+}
+
+@media screen and (max-width: 500px){
+    body{
+        background-size: 190%;
+        background-position: top;
+    }
+}
